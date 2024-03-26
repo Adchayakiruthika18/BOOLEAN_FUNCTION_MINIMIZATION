@@ -33,18 +33,35 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
-
+Developed by: Adcahayakiruthika M S
+RegisterNumber: 212223230005
+```
+module combinationalcircuit(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
+```
 
 **RTL realization**
 
-**Output:**
+![image](https://github.com/Adchayakiruthika18/BOOLEAN_FUNCTION_MINIMIZATION/assets/147139995/24c987ff-f7a7-4416-8b33-c7b8f488d380)
 
-**RTL**
+**Timetable**
+
+![image](https://github.com/Adchayakiruthika18/BOOLEAN_FUNCTION_MINIMIZATION/assets/147139995/0e5bb7e2-0035-44eb-ac54-de1087708a01)
 
 **Timing Diagram**
+
+![image](https://github.com/Adchayakiruthika18/BOOLEAN_FUNCTION_MINIMIZATION/assets/147139995/3f87a322-8dd5-4460-9cb8-392acb26434c)
 
 **Result:**
 
